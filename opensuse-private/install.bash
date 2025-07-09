@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo zypper in neovim starship gcc ghostty
+sudo zypper in neovim starship gcc ghostty lazygit
 
 rm ~/.config/nvim
 rm ~/.local/share/nvim
@@ -10,5 +10,8 @@ gh repo clone totto2727-dotfiles/nvim ~/.config/nvim
 
 rm ~/.config/ghostty
 gh repo clone totto2727-dotfiles/ghostty ~/.config/ghostty
+
+rm ~/.config/lazygit
+gh repo clone totto2727-dotfiles/lazygit ~/.config/lazygit
 
 bash ~/.config/dotfiles/opensuse-private/update.bash

@@ -10,3 +10,4 @@ curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/s
 
 git -C ~/.config/nvim pull
 git -C ~/.config/ghostty pull
+git -C ~/.config/lazygit pull
