@@ -8,6 +8,7 @@ rm ~/.local/state/nvim
 rm ~/.cache/nvim
 gh repo clone totto2727-dotfiles/nvim ~/.config/nvim
 
+rm ~/.config/ghostty
 gh repo clone totto2727-dotfiles/ghostty ~/.config/ghostty
 
 bash ~/.config/dotfiles/opensuse-private/update.bash
