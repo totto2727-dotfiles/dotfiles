@@ -63,3 +63,9 @@ curl https://raw.githubusercontent.com/totto2727-dotfiles/dotfiles/refs/heads/ma
 
 bash install.bash
 ```
+
+### docker
+
+```bash
+nvim ~/.local/bin/docker-credential-gh
+```
