@@ -4,6 +4,8 @@ sudo zypper in neovim starship gcc ghostty lazygit podman
 
 flatpak install flathub io.podman_desktop.PodmanDesktop
 
+curl https://mise.run | sh
+
 rm ~/.config/nvim
 rm ~/.local/share/nvim
 rm ~/.local/state/nvim

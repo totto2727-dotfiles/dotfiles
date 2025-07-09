@@ -2,6 +2,10 @@
 
 sudo zypper up
 
+mise install
+mise self-update
+mise up
+
 curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/.alias >~/.alias
 curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/.bashrc >~/.bashrc
 curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/.profile >~/.profile
@@ -16,3 +20,4 @@ curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/r
 git -C ~/.config/nvim pull
 git -C ~/.config/ghostty pull
 git -C ~/.config/lazygit pull
+git -C ~/.config/mise pull
