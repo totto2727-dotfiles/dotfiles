@@ -7,3 +7,4 @@ curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/.
 curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/.profile > ~/.profile
 curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/.inputrc > ~/.inputrc
 curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/starship.toml > ~/.config/starship.toml
+
