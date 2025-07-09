@@ -1,7 +1,11 @@
 #!/bin/bash
 
-git -C ~/.config/nvim pull
+sudo zypper up
 
-curl -L https://github.com/totto2727-dotfiles/zettlr/raw/refs/heads/main/install.bash >bash
-# 編集中コンテンツとコンフリクトを避けるために無効化
-# git -C ~/zettelkasten pull
+curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/.alias > ~/.alias
+curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/.bashrc > ~/.bashrc
+curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/.profile > ~/.profile
+curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/.inputrc > ~/.inputrc
+curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/starship.toml > ~/.config/starship.toml
+
+git -C ~/.config/nvim pull
