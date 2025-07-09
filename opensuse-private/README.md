@@ -36,7 +36,7 @@ LANG=C xdg-user-dirs-gtk-update
 1. open settings
 1. select keyboard
 1. add input source
-1. add english (US)
+1. add english (us)
 1. add japanese (mozc:あ)
 1. remove english (intl)
 
@@ -56,17 +56,9 @@ LANG=C xdg-user-dirs-gtk-update
 
 ## develop
 
-<https://ja.opensuse.org/SDB:Zypper_%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9>
-
 ```bash
 curl https://raw.githubusercontent.com/totto2727-dotfiles/dotfiles/refs/heads/main/opensuse-private/init.bash
 
 bash install.bash
-```
-
-### podman
-
-```bash
-nvim ~/.local/bin/docker-credential-gh
 ```
 
