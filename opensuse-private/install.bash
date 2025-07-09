@@ -1,6 +1,8 @@
 #!/bin/bash
 
-sudo zypper in neovim starship gcc ghostty lazygit
+sudo zypper in neovim starship gcc ghostty lazygit podman
+
+flatpak install flathub io.podman_desktop.PodmanDesktop
 
 rm ~/.config/nvim
 rm ~/.local/share/nvim
