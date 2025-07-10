@@ -56,10 +56,19 @@ LANG=C xdg-user-dirs-gtk-update
 
 ## develop
 
+### init
+
 ```bash
 curl https://raw.githubusercontent.com/totto2727-dotfiles/dotfiles/refs/heads/main/opensuse-private/init.bash
 
 bash install.bash
+```
+
+### tailscale
+
+```bash
+sudo systemctl enable --now tailscaled
+sudo tailscale up
 ```
 
 ## remove unnecessary app
