@@ -10,6 +10,7 @@ sudo zypper in \
   ghostty 1password
 
 flatpak install flathub io.podman_desktop.PodmanDesktop
+flatpak install flathub app.zen_browser.zen
 
 curl https://mise.run | sh
 
