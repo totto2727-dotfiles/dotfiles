@@ -62,3 +62,10 @@ curl https://raw.githubusercontent.com/totto2727-dotfiles/dotfiles/refs/heads/ma
 bash install.bash
 ```
 
+## remove unnecessary app
+
+1. open software
+1. open repository setting
+1. enable opensuse repository
+1. remove apps
+
