@@ -12,7 +12,7 @@ sudo zypper up
 sudo zypper in \
   gcc podman \
   neovim lazygit starship zoxide fzf \
-  git-delta sd ripgrep fd \
+  git-delta sd ripgrep fd eza \
   ghostty 1password tailscale
 
 flatpak install flathub io.podman_desktop.PodmanDesktop
