@@ -1,21 +1,36 @@
 #!/bin/bash
 
+GITHUB_ORG='https://raw.githubusercontent.com/totto2727-dotfiles'
+GITHUB_REF='refs/heads/main'
+
+GITHUB_PATH() {
+  return "$GITHUB_ORG/$1/$GITHUB_REF"
+}
+
 sudo zypper up
 
 mise install
 mise self-update
 mise up
 
-curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/.alias >~/.alias
-curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/.bashrc >~/.bashrc
-curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/.profile >~/.profile
-curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/.inputrc >~/.inputrc
-curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/starship.toml >~/.config/starship.toml
+# bash
+curl "$(GITHUB_PATH bash)/.alias" >~/.alias
+curl "$(GITHUB_PATH bash)/.bashrc" >~/.bashrc
+curl "$(GITHUB_PATH bash)/.profile" >~/.profile
+curl "$(GITHUB_PATH bash)/.inputrc" >~/.inputrc
+curl "$(GITHUB_PATH bash)/starship.toml" >~/.config/starship.toml
 
-curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/docker-credential-gh >~/.local/bin/docker-credential-gh
+# podman
+curl "$(GITHUB_PATH bash)/auth.json" >~/.config/containers/auth.json
+curl "$(GITHUB_PATH bash)/registries.conf" >~/.config/containers/registries.conf
+curl "$(GITHUB_PATH bash)/docker-credential-gh" >~/.local/bin/docker-credential-gh
 chmod 500 ~/.local/bin/docker-credential-gh
-curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/auth.json >~/.config/containers/auth.json
-curl https://raw.githubusercontent.com/totto2727-dotfiles/bash/refs/heads/main/registries.conf >~/.config/containers/registries.conf
+
+# git
+curl "$(GITHUB_PATH git)/.gitconfig >~/.gitconfig"
+mkdir -p ~/.config/git
+curl "$(GITHUB_PATH git)/tokyonight_moon.gitconfig" >~/.config/git/tokyonight_moon.gitconfig
+curl "$(GITHUB_PATH git)/user.base.gitconfig" >~/.config/git/user.base.gitconfig
 
 git -C ~/.config/nvim pull
 git -C ~/.config/ghostty pull
