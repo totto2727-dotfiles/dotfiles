@@ -23,7 +23,7 @@ LANG=C xdg-user-dirs-gtk-update
 - document
     - ipa ex gothic
 -  mono
-    - `PlemolJP Console
+    - PlemolJP Console
 
 ## trackpad and mouse
 
