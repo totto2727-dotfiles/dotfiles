@@ -1,6 +1,13 @@
 #!/bin/bash
 
-sudo zypper in neovim starship gcc ghostty lazygit podman
+sudo rpm --import https://downloads.1password.com/linux/keys/1password.asc
+sudo zypper addrepo https://downloads.1password.com/linux/rpm/stable/x86_64 1password
+
+sudo zypper in \
+  gcc podman \
+  neovim lazygit starship \
+  git-delta sd ripgrep \
+  ghostty 1password
 
 flatpak install flathub io.podman_desktop.PodmanDesktop
 

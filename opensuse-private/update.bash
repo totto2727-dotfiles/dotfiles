@@ -4,7 +4,7 @@ GITHUB_ORG='https://raw.githubusercontent.com/totto2727-dotfiles'
 GITHUB_REF='refs/heads/main'
 
 GITHUB_PATH() {
-  return "$GITHUB_ORG/$1/$GITHUB_REF"
+  echo "$GITHUB_ORG/$1/$GITHUB_REF"
 }
 
 sudo zypper up
@@ -27,10 +27,11 @@ curl "$(GITHUB_PATH bash)/docker-credential-gh" >~/.local/bin/docker-credential-
 chmod 500 ~/.local/bin/docker-credential-gh
 
 # git
-curl "$(GITHUB_PATH git)/.gitconfig >~/.gitconfig"
+curl "$(GITHUB_PATH git)/.gitconfig" >~/.gitconfig
 mkdir -p ~/.config/git
-curl "$(GITHUB_PATH git)/tokyonight_moon.gitconfig" >~/.config/git/tokyonight_moon.gitconfig
-curl "$(GITHUB_PATH git)/user.base.gitconfig" >~/.config/git/user.base.gitconfig
+curl "$(GITHUB_PATH git)/delta.gitconfig" >~/.config/git/delta.gitconfig
+curl "$(GITHUB_PATH git)/user.gitconfig" >~/.config/git/user.gitconfig
+curl "https://raw.githubusercontent.com/folke/tokyonight.nvim/refs/heads/main/extras/delta/tokyonight_moon.gitconfig" >~/.config/git/tokyonight_moon.gitconfig
 
 git -C ~/.config/nvim pull
 git -C ~/.config/ghostty pull
