@@ -31,6 +31,7 @@ curl "$(GITHUB_PATH git)/.gitconfig" >~/.gitconfig
 mkdir -p ~/.config/git
 curl "$(GITHUB_PATH git)/delta.gitconfig" >~/.config/git/delta.gitconfig
 curl "$(GITHUB_PATH git)/user.gitconfig" >~/.config/git/user.gitconfig
+curl "$(GITHUB_PATH git)/ignore" >~/.config/git/ignore
 curl "https://raw.githubusercontent.com/folke/tokyonight.nvim/refs/heads/main/extras/delta/tokyonight_moon.gitconfig" >~/.config/git/tokyonight_moon.gitconfig
 
 git -C ~/.config/nvim pull
