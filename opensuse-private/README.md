@@ -64,6 +64,10 @@ curl https://raw.githubusercontent.com/totto2727-dotfiles/dotfiles/refs/heads/ma
 bash install.bash
 ```
 
+### 1password
+
+1. enable ssh agent
+
 ### tailscale
 
 ```bash
