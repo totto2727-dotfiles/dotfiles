@@ -8,8 +8,9 @@ LANG=C xdg-user-dirs-gtk-update
 
 ## ui
 
+
 - enable dark mode
-- select scale 200%
+- GNOME 設定のアクセシビリティ → Seeing → 「Cursor Size」を大きい奴にする
 
 ## font
 
@@ -17,6 +18,7 @@ LANG=C xdg-user-dirs-gtk-update
     - move `~/.local/share/fonts`
     - reboot
 1. open tweaks > font
+1. scale 1.5
 
 - interface
     - ipa ui gothic
@@ -24,6 +26,7 @@ LANG=C xdg-user-dirs-gtk-update
     - ipa ex gothic
 -  mono
     - PlemolJP Console
+
 
 ## trackpad and mouse
 
