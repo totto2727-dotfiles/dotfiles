@@ -70,6 +70,13 @@ bash install.bash
 ### 1password
 
 1. enable ssh agent
+1. edit agent.toml
+  ```toml:~/.config/1Password/ssh/agent.toml
+  [[ssh-keys]]
+  item = "opensuse-private"
+  vault = "Private"
+  ```
+1. reboot
 
 ### tailscale
 
