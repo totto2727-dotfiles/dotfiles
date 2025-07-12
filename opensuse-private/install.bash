@@ -17,6 +17,7 @@ sudo zypper in \
 
 flatpak install flathub io.podman_desktop.PodmanDesktop
 flatpak install flathub app.zen_browser.zen
+flatpak install flathub com.discordapp.Discord
 
 curl https://mise.run | sh
 
