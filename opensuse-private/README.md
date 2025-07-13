@@ -57,6 +57,12 @@ LANG=C xdg-user-dirs-gtk-update
 1. enable ctrl position > make caps lock atc as an additional ctrl modifier, but keep identifying as caps lock
 1. enable switching to another layout > left ctrl
 
+### xremap
+
+<https://github.com/petrstepanov/gnome-macos-remap-wayland>
+
+1. install xremap
+
 ## develop
 
 ### init
