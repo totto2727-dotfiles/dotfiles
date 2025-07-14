@@ -33,4 +33,7 @@ gh repo clone totto2727-dotfiles/ghostty ~/.config/ghostty
 rm ~/.config/lazygit
 gh repo clone totto2727-dotfiles/lazygit ~/.config/lazygit
 
+rm ~/.config/keyd
+gh repo clone totto2727-dotfiles/keyd
+
 bash ~/.config/dotfiles/opensuse-private/update.bash
