@@ -10,10 +10,10 @@ sudo zypper addrepo https://downloads.1password.com/linux/rpm/stable/x86_64 1pas
 sudo zypper up
 
 sudo zypper in \
-  gcc podman \
+  gcc podman make \
   neovim lazygit starship zoxide fzf \
   git-delta sd ripgrep fd eza \
-  ghostty 1password tailscale
+  ghostty 1password tailscale keyd
 
 flatpak install flathub io.podman_desktop.PodmanDesktop
 flatpak install flathub app.zen_browser.zen

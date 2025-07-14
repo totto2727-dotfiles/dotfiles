@@ -53,15 +53,7 @@ LANG=C xdg-user-dirs-gtk-update
 1. open tweaks
 1. select keyboard
 1. click additional layout option
-1. enable alt and win behavior > reverse alt and win
-1. enable ctrl position > make caps lock atc as an additional ctrl modifier, but keep identifying as caps lock
-1. enable switching to another layout > left ctrl
-
-### xremap
-
-<https://github.com/petrstepanov/gnome-macos-remap-wayland>
-
-1. install xremap
+1. enable switching to another layout > capslock
 
 ## develop
 
@@ -89,6 +81,27 @@ bash install.bash
 ```bash
 sudo systemctl enable --now tailscaled
 sudo tailscale up
+```
+
+### keyd
+
+1. `gsettings set org.gnome.mutter overlay-key ''`
+1. remove shortcut
+   - super + a
+   - super + c
+   - super + v
+   - super + space
+1. edit shortcut to show activity(super + space)
+
+```bash
+sudo systemctl enable --now keyd
+sudo usermod -aG keyd "$USER"
+mkdir -p ~/.local/share/gnome-shell/extensions
+ln -s /usr/share/keyd/gnome-extension-45 ~/.local/share/gnome-shell/extensions/keyd
+# reboot
+gnome-extensions enable keyd
+gnome-extensions show keyd
+keyd-application-mapper
 ```
 
 ## remove unnecessary app
