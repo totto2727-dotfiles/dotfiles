@@ -62,8 +62,9 @@ LANG=C xdg-user-dirs-gtk-update
    - super + a
    - super + c
    - super + v
-   - super + space
+   - super + l
 1. edit shortcut to show activity(super + space)
+1. edit shortcut to show app list(super + shift + space)
 
 ```bash
 sudo zypper in keyd
