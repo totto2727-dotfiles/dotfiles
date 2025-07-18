@@ -11,7 +11,7 @@ sudo zypper up
 
 sudo zypper in \
   gcc podman make \
-  neovim lazygit starship zoxide fzf \
+  neovim lazygit starship zoxide fzf yazi \
   git-delta sd ripgrep fd eza \
   ghostty 1password tailscale keyd
 
