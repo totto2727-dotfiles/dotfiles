@@ -70,8 +70,8 @@ LANG=C xdg-user-dirs-gtk-update
 
 ```bash
 curl https://raw.githubusercontent.com/totto2727-dotfiles/dotfiles/refs/heads/main/opensuse-private/init.bash
-
-bash install.bash
+reboot
+deno run -A https://raw.githubusercontent.com/totto2727-dotfiles/dotfiles/refs/heads/main/opensuse-private/install.ts
 ```
 
 ### 1password

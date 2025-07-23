@@ -1,41 +1,13 @@
 // deno run -A update.ts
 import $ from "jsr:@david/dax";
-import * as os from "node:os";
 import { Predicate } from "jsr:@totto/function/effect";
-
-function getHomeDirectory() {
-  return os.homedir();
-}
-
-function homePath(filePath: string) {
-  return $.path(getHomeDirectory()).join(filePath).toString();
-}
-
-function configPath(filePath: string) {
-  return $.path(getHomeDirectory()).join(".config").join(filePath).toString();
-}
-
-function localBinPath(filePath: string) {
-  return $.path(getHomeDirectory()).join(".local").join("bin").join(filePath)
-    .toString();
-}
-
-const GITHUB_ORG = "https://raw.githubusercontent.com/totto2727-dotfiles";
-const GITHUB_REF = "refs/heads/main";
-
-function githubURL(repositoryName: string) {
-  return `${GITHUB_ORG}/${repositoryName}/${GITHUB_REF}`;
-}
-
-function rawURL(repositoryName: string, path: string) {
-  return $.path(githubURL(repositoryName)).join(path).toString();
-}
-
-function tokyoNightRawURL() {
-  return $.path(
-    "https://raw.githubusercontent.com/folke/tokyonight.nvim/refs/heads/main/extras/delta/tokyonight_moon.gitconfig",
-  ).toString();
-}
+import {
+  configPath,
+  getHomeDirectory,
+  homePath,
+  localBinPath,
+} from "./helper/path.ts";
+import { rawURL, tokyoNightRawURL } from "./helper/github.ts";
 
 function request(path: string) {
   return $.request(path).showProgress().text();
@@ -46,13 +18,12 @@ type SaveOption = {
 };
 
 async function save(filePath: string, content: string, options?: SaveOption) {
-  return await $`echo ${content}`.pipe(
-    Predicate.isTruthy(options?.sudo)
-      ? $`sudo tee ${filePath}`
-      : $`tee ${filePath}`,
-  ).quiet(
-    "stdout",
-  );
+  return await (Predicate.isTruthy(options?.sudo)
+    ? $`sudo tee ${filePath}`
+    : $`tee ${filePath}`).stdinText(content)
+    .quiet(
+      "stdout",
+    );
 }
 
 class DownloadFile {
