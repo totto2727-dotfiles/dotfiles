@@ -3,6 +3,7 @@
 # tailscale
 sudo rpm --import https://pkgs.tailscale.com/stable/opensuse/tumbleweed/repo.gpg
 sudo zypper ar -g -r https://pkgs.tailscale.com/stable/opensuse/tumbleweed/tailscale.repo
+
 # 1password
 sudo rpm --import https://downloads.1password.com/linux/keys/1password.asc
 sudo zypper addrepo https://downloads.1password.com/linux/rpm/stable/x86_64 1password
@@ -36,4 +37,11 @@ gh repo clone totto2727-dotfiles/lazygit ~/.config/lazygit
 rm ~/.config/keyd
 gh repo clone totto2727-dotfiles/keyd
 
-bash ~/.config/dotfiles/opensuse-private/update.bash
+sudo usermod -aG keyd "$USER"
+sudo systemctl enable --now keyd
+gnome-extensions enable keyd
+
+# 多分GitHubから行ける
+deno run -A ~/.config/dotfiles/opensuse-private/update.bash
+
+sudo zypper rm deno

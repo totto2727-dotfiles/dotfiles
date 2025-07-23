@@ -1,8 +1,16 @@
 #!/bin/bash
 
-sudo zypper up 
-sudo zypper in git gh
+sudo zypper up
+sudo zypper in git gh deno
+
 cd ~/.config
+
 gh auth login
-gh repo clone totto2727-dotfiles/dotfiles -- --recursive
-cd ~/.config/dotfiles/opensuse-private
+
+mkdir -p ~/.local/share/gnome-shell/extensions
+#ln -s /usr/share/keyd/gnome-extension-45 ~/.local/share/gnome-shell/extensions/keyd
+mkdir -p ~/.local/share/gnome-shell/extensions/keyd
+curl https://raw.githubusercontent.com/rvaiya/keyd/refs/heads/master/data/gnome-extension-45/extension.js >~/.local/share/gnome-shell/extensions/keyd/extension.js
+curl https://raw.githubusercontent.com/rvaiya/keyd/refs/heads/master/data/gnome-extension-45/metadata.js >~/.local/share/gnome-shell/extensions/keyd/metadata.json
+
+echo reboot

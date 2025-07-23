@@ -8,25 +8,23 @@ LANG=C xdg-user-dirs-gtk-update
 
 ## ui
 
-
 - enable dark mode
 - GNOME 設定のアクセシビリティ → Seeing → 「Cursor Size」を大きい奴にする
 
 ## font
 
 1. download [plemoljp](https://github.com/yuru7/PlemolJP)
-    - move `~/.local/share/fonts`
-    - reboot
+   - move `~/.local/share/fonts`
+   - reboot
 1. open tweaks > font
 1. scale 1.5
 
 - interface
-    - ipa ui gothic
+  - ipa ui gothic
 - document
-    - ipa ex gothic
--  mono
-    - PlemolJP Console
-
+  - ipa ex gothic
+- mono
+  - PlemolJP Console
 
 ## trackpad and mouse
 
@@ -66,21 +64,6 @@ LANG=C xdg-user-dirs-gtk-update
 1. edit shortcut to show activity(super + space)
 1. edit shortcut to show app list(super + shift + space)
 
-```bash
-sudo zypper in keyd
-sudo systemctl enable --now keyd
-sudo usermod -aG keyd "$USER"
-mkdir -p ~/.local/share/gnome-shell/extensions
-#ln -s /usr/share/keyd/gnome-extension-45 ~/.local/share/gnome-shell/extensions/keyd
-mkdir -p ~/.local/share/gnome-shell/extensions/keyd
-curl https://raw.githubusercontent.com/rvaiya/keyd/refs/heads/master/data/gnome-extension-45/extension.js >~/.local/share/gnome-shell/extensions/keyd/extension.js
-curl https://raw.githubusercontent.com/rvaiya/keyd/refs/heads/master/data/gnome-extension-45/metadata.js >~/.local/share/gnome-shell/extensions/keyd/metadata.json
-# reboot
-gnome-extensions enable keyd
-gnome-extensions show keyd
-keyd-application-mapper
-```
-
 ## develop
 
 ### init
@@ -95,11 +78,13 @@ bash install.bash
 
 1. enable ssh agent
 1. edit agent.toml
-  ```toml:~/.config/1Password/ssh/agent.toml
-  [[ssh-keys]]
-  item = "opensuse-private"
-  vault = "Private"
-  ```
+
+```toml:~/.config/1Password/ssh/agent.toml
+[[ssh-keys]]
+item = "opensuse-private"
+vault = "Private"
+```
+
 1. reboot
 
 ### tailscale
@@ -115,4 +100,3 @@ sudo tailscale up
 1. open repository setting
 1. enable opensuse repository
 1. remove apps
-
