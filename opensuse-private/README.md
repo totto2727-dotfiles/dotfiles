@@ -11,6 +11,10 @@ LANG=C xdg-user-dirs-gtk-update
 - enable dark mode
 - GNOME 設定のアクセシビリティ → Seeing → 「Cursor Size」を大きい奴にする
 
+```bash
+gsettings set org.gnome.desktop.wm.preferences button-layout 'close,appmenu:'
+```
+
 ## font
 
 1. download [plemoljp](https://github.com/yuru7/PlemolJP)
