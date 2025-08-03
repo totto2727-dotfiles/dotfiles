@@ -70,6 +70,9 @@ async function main() {
   await $`sudo systemctl enable --now keyd`;
   await $`gnome-extensions enable keyd`;
 
+  const claudeConfigPath = homePath(".claude");
+  await $`gh repo clone totto2727-dotfiles/claude ${claudeConfigPath}`;
+
   await $`deno run -A ${rawURL("dotfiles", "opensuse-private/update.ts")}`;
 
   await $`sudo zypper rm deno`;

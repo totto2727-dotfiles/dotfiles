@@ -144,6 +144,7 @@ async function main() {
       configPath("lazygit"),
       configPath("mise"),
       configPath("keyd"),
+      homePath(".claude"),
     ];
 
     await Promise.all(
