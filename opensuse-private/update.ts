@@ -1,6 +1,6 @@
 // deno run -A update.ts
 import $ from "jsr:@david/dax";
-import { Predicate } from "jsr:@totto/function/effect";
+import { Array, pipe, Predicate } from "jsr:@totto/function/effect";
 import {
   configPath,
   getHomeDirectory,
@@ -148,8 +148,17 @@ async function main() {
     ];
 
     await Promise.all(
-      gitReposityPathArray.map((path) =>
-        $`git -C ${path} pull`.quiet("stdout")
+      Array.map(
+        gitReposityPathArray,
+        (path) => {
+          try {
+            $`git -C ${path} pull`.quiet("stdout");
+          } catch (e) {
+            throw new Error(
+              `Pull Error: ${path} ${e}`,
+            );
+          }
+        },
       ),
     );
 
