@@ -38,6 +38,7 @@ async function main() {
     "1password",
     "tailscale",
     "keyd",
+    "pavucontrol",
   ]}`;
 
   await Promise.all([
