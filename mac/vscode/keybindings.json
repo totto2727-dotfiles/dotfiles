@@ -1,0 +1,31 @@
+// Place your key bindings in this file to override the defaults
+[
+    // Jetbrains再現
+    {
+        "command": "workbench.action.quickOpen",
+        "key": "shift shift"
+    },
+    {
+        "command": "workbench.action.showCommands",
+        "key": "ctrl ctrl"
+    },
+    // ターミナル
+    {
+        "key": "alt+t",
+        "command": "terminal.focus",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+t",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "merge.goToPreviousUnhandledConflict"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "merge.goToNextUnhandledConflict"
+    }
+]
