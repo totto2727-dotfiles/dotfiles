@@ -1,0 +1,13 @@
+# 1Password使うパターンと使わないパターンを作成する
+[core]
+ignorecase = false
+
+[init]
+defaultBranch = main
+
+[pull]
+rebase = true
+
+[user]
+name =
+email =
