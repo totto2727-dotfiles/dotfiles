@@ -120,3 +120,17 @@ brew install ni
 brew install claude-code
 gh repo clone totto2727-dotfiles/claude-for-work ~/.claude
 ```
+
+## setup lazygit
+
+```bash
+echo 'export XDG_CONFIG_HOME="$HOME/.config"' >> ~/.zshrc
+gh repo clone totto2727-dotfiles/lazygit ~/.config/lazygit
+brew install lazygit
+```
+
+## setup utility
+
+```bash
+brew install sd ripgrep fd eza zoxide yazi lazydocker
+```
