@@ -56,6 +56,17 @@ curl -L https://github.com/totto2727-dotfiles/dotfiles/raw/refs/heads/main/mac/.
 
 - rewrite user name and user email
 
+### gpg sign
+
+```bash
+brew install gnupg pinentry-mac
+mkdir -p ~/.gnupg
+echo 'pinentry-program /opt/homebrew/bin/pinentry-mac' > ~/.gnupg/gpg-agent.conf
+```
+
+- <https://christina04.hatenablog.com/entry/create-gpg-master-key-and-subkey>
+- <https://text.baldanders.info/remark/2019/10/openpgp-public-keys-in-github/>
+
 ## setup gh
 
 ### install
