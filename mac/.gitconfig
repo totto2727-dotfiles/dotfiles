@@ -1,4 +1,3 @@
-# 1Password使うパターンと使わないパターンを作成する
 [core]
 ignorecase = false
 
@@ -8,7 +7,13 @@ defaultBranch = main
 [pull]
 rebase = true
 
-# 必要に応じて設定すること
+[commit]
+gpgsign = true
+
+[tag]
+gpgsign = true
+
 [user]
-name =
-email =
+name = totto2727
+email = kaihatu.totto2727@gmail.com
+signingkey = BA662CD23E2B4AD8
