@@ -8,6 +8,7 @@ defaultBranch = main
 [pull]
 rebase = true
 
+# 必要に応じて設定すること
 [user]
 name =
 email =
