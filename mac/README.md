@@ -51,7 +51,9 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 ## setup git
 
 ```bash
-curl -L https://github.com/totto2727-dotfiles/dotfiles/raw/refs/heads/main/mac/.gitconfig
+curl -L https://github.com/totto2727-dotfiles/dotfiles/raw/refs/heads/main/mac/.gitconfig > ~/.gitconfig
+# 必要であれば
+curl -L https://github.com/totto2727-dotfiles/dotfiles/raw/refs/heads/main/mac/.gitconfig-work > ~/.gitconfig-work
 ```
 
 - rewrite user name and user email
