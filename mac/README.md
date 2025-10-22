@@ -51,6 +51,7 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 ## setup git
 
 ```bash
+brew install git-delta
 curl -L https://github.com/totto2727-dotfiles/dotfiles/raw/refs/heads/main/mac/.gitconfig > ~/.gitconfig
 # 必要であれば
 curl -L https://github.com/totto2727-dotfiles/dotfiles/raw/refs/heads/main/mac/.gitconfig-work > ~/.gitconfig-work
