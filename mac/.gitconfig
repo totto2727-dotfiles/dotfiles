@@ -1,8 +1,15 @@
 [core]
 ignorecase = false
+pager = delta
 
 [init]
 defaultBranch = main
+
+[interactive]
+diffFilter = delta --color-only
+
+[merge]
+conflictstyle = zdiff3
 
 [pull]
 rebase = true
@@ -12,6 +19,12 @@ gpgsign = true
 
 [tag]
 gpgsign = true
+
+[delta]
+navigate = true
+dark = true
+line-numbers = true
+side-by-side = true
 
 [user]
 name = totto2727
