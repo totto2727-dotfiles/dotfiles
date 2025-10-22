@@ -247,6 +247,7 @@
   ],
   "vim.useSystemClipboard": true,
   "workbench.activityBar.location": "top",
+  "workbench.activityBar.orientation": "vertical",
   "workbench.colorTheme": "Ayu Mirage Bordered",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.scrollToSwitchTabs": true,
