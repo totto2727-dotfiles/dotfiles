@@ -48,6 +48,12 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 
 ## install brew
 
+## install font
+
+```bash
+brew install font-plemol-jp font-plemol-jp-nf
+```
+
 ## setup git
 
 ```bash
