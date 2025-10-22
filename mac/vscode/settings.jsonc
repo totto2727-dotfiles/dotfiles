@@ -134,6 +134,9 @@
   "claude-code.selectedModel": "default",
   "cSpell.enabled": false,
   "css.lint.unknownAtRules": "ignore",
+  "cursor.composer.queueMessageDefaultBehavior": "queue",
+  "cursor.composer.shouldAllowCustomModes": true,
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
   "cursor.diffs.useCharacterLevelDiffs": true,
   "deno.enable": false,
   "deno.path": "",
@@ -236,7 +239,7 @@
     },
     {
       "before": [
-        "K"
+        "K",
       ],
       "commands": [
         {
