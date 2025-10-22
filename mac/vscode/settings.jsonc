@@ -1,142 +1,142 @@
 // https://zenn.dev/yutotnh/articles/1577b6dc5ab7d9
 {
-    "[code-workspace]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+  "[code-workspace]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "files.trimTrailingWhitespace": false
+  },
+  "[snippets]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "biome.enabled": false,
+  "claude-code.selectedModel": "default",
+  "cSpell.enabled": false,
+  "css.lint.unknownAtRules": "ignore",
+  "cursor.diffs.useCharacterLevelDiffs": true,
+  "deno.enable": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.dragAndDrop": false,
+  "editor.fontFamily": "PlemolJP Console",
+  "editor.fontSize": 16,
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.guides.highlightActiveBracketPair": true,
+  "editor.linkedEditing": true,
+  "editor.renderLineHighlight": "all",
+  "editor.renderWhitespace": "all",
+  "editor.showFoldingControls": "always",
+  "editor.wrappingIndent": "indent",
+  "emmet.triggerExpansionOnTab": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.fileNesting.enabled": true,
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.turbo/**": true,
+    "**/.wrangler/**": true,
+    "**/storybook-static/**": true,
+    "**/test-results/**": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": "all",
+  "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "always",
+  "git.pruneOnFetch": true,
+  "githubPullRequests.fileListLayout": "tree",
+  "githubPullRequests.pullBranch": "always",
+  "go.toolsManagement.autoUpdate": true,
+  "html.completion.attributeDefaultValue": "empty",
+  "javascript.autoClosingTags": true,
+  "javascript.preferences.jsxAttributeCompletionStyle": "none",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "mise.configureExtensionsAutomatically": false,
+  "scm.alwaysShowRepositories": true,
+  "scm.defaultViewMode": "tree",
+  "scm.diffDecorationsGutterWidth": 5,
+  "scm.inputFontFamily": "editor",
+  "tailwindCSS.emmetCompletions": true,
+  "terminal.integrated.fontFamily": "PlemolJP Console",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.macOptionIsMeta": true,
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.smoothScrolling": true,
+  "typescript.autoClosingTags": true,
+  "typescript.preferences.jsxAttributeCompletionStyle": "none",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vim.insertModeKeyBindings": [
+    {
+      "after": [
+        "<Esc>"
+      ],
+      "before": [
+        "j",
+        "j"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "after": [
+        "\"",
+        "_",
+        "x"
+      ],
+      "before": [
+        "x"
+      ]
     },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+    {
+      "after": [
+        "\"",
+        "_",
+        "c"
+      ],
+      "before": [
+        "c"
+      ]
     },
-    "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+    {
+      "after": [
+        "\"",
+        "_",
+        "s"
+      ],
+      "before": [
+        "s"
+      ]
     },
-    "[markdown]": {
-        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
-        "files.trimTrailingWhitespace": false
-    },
-    "[snippets]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "biome.enabled": false,
-    "claude-code.selectedModel": "default",
-    "cSpell.enabled": false,
-    "css.lint.unknownAtRules": "ignore",
-    "cursor.diffs.useCharacterLevelDiffs": true,
-    "deno.enable": false,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.dragAndDrop": false,
-    "editor.fontFamily": "PlemolJP Console",
-    "editor.fontSize": 16,
-    "editor.formatOnSave": true,
-    "editor.guides.bracketPairs": true,
-    "editor.guides.bracketPairsHorizontal": true,
-    "editor.guides.highlightActiveBracketPair": true,
-    "editor.linkedEditing": true,
-    "editor.renderLineHighlight": "all",
-    "editor.renderWhitespace": "all",
-    "editor.showFoldingControls": "always",
-    "editor.wrappingIndent": "indent",
-    "emmet.triggerExpansionOnTab": true,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.fileNesting.enabled": true,
-    "files.autoSave": "onFocusChange",
-    "files.exclude": {
-        "**/.turbo/**": true,
-        "**/.wrangler/**": true,
-        "**/storybook-static/**": true,
-        "**/test-results/**": true
-    },
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "git.autofetch": "all",
-    "git.confirmSync": false,
-    "git.openRepositoryInParentFolders": "always",
-    "git.pruneOnFetch": true,
-    "githubPullRequests.fileListLayout": "tree",
-    "githubPullRequests.pullBranch": "always",
-    "go.toolsManagement.autoUpdate": true,
-    "html.completion.attributeDefaultValue": "empty",
-    "javascript.autoClosingTags": true,
-    "javascript.preferences.jsxAttributeCompletionStyle": "none",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "mise.configureExtensionsAutomatically": false,
-    "scm.alwaysShowRepositories": true,
-    "scm.defaultViewMode": "tree",
-    "scm.diffDecorationsGutterWidth": 5,
-    "scm.inputFontFamily": "editor",
-    "tailwindCSS.emmetCompletions": true,
-    "terminal.integrated.fontFamily": "PlemolJP Console",
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.macOptionIsMeta": true,
-    "terminal.integrated.scrollback": 10000,
-    "terminal.integrated.smoothScrolling": true,
-    "typescript.autoClosingTags": true,
-    "typescript.preferences.jsxAttributeCompletionStyle": "none",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "vim.insertModeKeyBindings": [
+    {
+      "commands": [
         {
-            "after": [
-                "<Esc>"
-            ],
-            "before": [
-                "j",
-                "j"
-            ]
+          "command": "editor.action.showHover"
         }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "after": [
-                "\"",
-                "_",
-                "x"
-            ],
-            "before": [
-                "x"
-            ]
-        },
-        {
-            "after": [
-                "\"",
-                "_",
-                "c"
-            ],
-            "before": [
-                "c"
-            ]
-        },
-        {
-            "after": [
-                "\"",
-                "_",
-                "s"
-            ],
-            "before": [
-                "s"
-            ]
-        },
-        {
-            "commands": [
-                {
-                    "command": "editor.action.showHover"
-                }
-            ],
-            "before": [
-                "K"
-            ]
-        }
-    ],
-    "vim.useSystemClipboard": true,
-    "workbench.activityBar.location": "top",
-    "workbench.colorTheme": "Ayu Mirage Bordered",
-    "workbench.editor.closeOnFileDelete": true,
-    "workbench.editor.scrollToSwitchTabs": true,
-    "workbench.editor.wrapTabs": true,
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.list.smoothScrolling": true,
-    "workbench.panel.showLabels": false
+      ],
+      "before": [
+        "K"
+      ]
+    }
+  ],
+  "vim.useSystemClipboard": true,
+  "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.scrollToSwitchTabs": true,
+  "workbench.editor.wrapTabs": true,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.list.smoothScrolling": true,
+  "workbench.panel.showLabels": false
 }
