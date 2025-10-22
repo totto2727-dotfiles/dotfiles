@@ -48,6 +48,14 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 
 ## install brew
 
+## setup git
+
+```bash
+curl -L https://github.com/totto2727-dotfiles/dotfiles/raw/refs/heads/main/mac/.gitconfig
+```
+
+- rewrite user name and user email
+
 ## setup gh
 
 ### install
@@ -67,4 +75,34 @@ gh auth login
 ```bash
 cd ~/.config
 gh repo clone totto2727-dotfiles/dotfiles
+```
+
+## setup starship
+
+```bash
+brew install starship
+echo 'eval "$(starship init zsh)"' >> ~/.zshrc
+curl -L https://github.com/totto2727-dotfiles/bash/raw/refs/heads/main/starship.toml > ~/.config/starship.toml
+```
+
+## setup mise
+
+```bash
+brew install mise
+echo 'eval "$(mise activate zsh)"' >> "~/.zshrc"
+```
+
+## setup javascript
+
+```bash
+# npmバックエンドのため、aquaではなくasdfのnodeをインストールする
+mise use -g node@lts aqua:pnpm/pnpm@latest bun@latest deno@latest
+brew install ni
+```
+
+## setup claude code
+
+```bash
+brew install claude-code
+gh repo clone totto2727-dotfiles/claude-for-work ~/.claude
 ```
