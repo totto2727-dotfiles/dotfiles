@@ -142,3 +142,32 @@ brew install sd ripgrep fd eza zoxide yazi lazydocker neovim
 echo 'export EDITOR=nvim' >> ~/.zshrc
 echo 'eval "$(zoxide init zsh)"' >> ~/.zshrc
 ```
+
+## alias
+
+```zsh
+alias path-list='echo "$PATH" | sd ":" "\n"'
+
+alias G='git'
+alias GC='git commit'
+alias GCA='git commit --amend'
+alias GSW='git switch'
+alias GSWC='git switch -c'
+alias GPUSHF='git push --force-with-lease --force-if-includes'
+alias gh-pr-create='gh pr create -a "@me" --base'
+
+alias LG='lazygit'
+alias LD='lazydocker'
+alias YZ='yazi'
+
+alias VI='nvim'
+alias vi='nvim'
+alias vim='nvim'
+
+alias la='eza -a --group-directories-first'
+alias ll='la -l'
+
+chpwd() {
+  la
+}
+```
