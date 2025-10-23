@@ -138,5 +138,7 @@ brew install lazygit
 ## setup utility
 
 ```bash
-brew install sd ripgrep fd eza zoxide yazi lazydocker
+brew install sd ripgrep fd eza zoxide yazi lazydocker neovim
+echo 'export EDITOR=nvim' >> ~/.zshrc
+echo 'eval "$(zoxide init zsh)"' >> ~/.zshrc
 ```
