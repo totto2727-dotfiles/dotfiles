@@ -192,5 +192,3 @@ podman machine ssh --username root rm /etc/containers/registries.conf.d/000-shor
 podman machine stop && podman machine start
 podman run --rm -it --device /dev/dri --name gpu-info quay.io/slopezpa/fedora-vgpu vulkaninfo | grep "GPU"
 ```
-
-### gpt-oss
