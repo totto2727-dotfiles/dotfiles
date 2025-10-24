@@ -186,7 +186,6 @@ curl -L https://github.com/totto2727-dotfiles/bash/raw/refs/heads/main/registrie
 curl -L https://github.com/totto2727-dotfiles/bash/raw/refs/heads/main/docker-credential-gh > ~/.local/bin/docker-credential-gh
 chmod 500 ~/.local/bin/docker-credential-gh
 # Podman DesktopのSettings > Resourcesからインスタンスを作成する
-# https://podman-desktop.io/docs/podman/gpu
 scp -P $(podman machine inspect | jq '.[0].SSHConfig.Port') -i ~/.local/share/containers/podman/machine/machine ~/.config/containers/registries.conf root@localhost:/etc/containers/registries.conf
 podman machine ssh --username root rm /etc/containers/registries.conf.d/000-shortnames.conf
 podman machine stop && podman machine start
