@@ -174,6 +174,8 @@ chpwd() {
 
 ## Podman
 
+### script
+
 ```bash
 mkdir -p ~/.local/bin/
 echo 'export PATH="$PATH:${HOME}/.local/bin"' >> ~/.zshrc
@@ -183,8 +185,12 @@ curl -L https://github.com/totto2727-dotfiles/bash/raw/refs/heads/main/auth.json
 curl -L https://github.com/totto2727-dotfiles/bash/raw/refs/heads/main/registries.conf > ~/.config/containers/registries.conf
 curl -L https://github.com/totto2727-dotfiles/bash/raw/refs/heads/main/docker-credential-gh > ~/.local/bin/docker-credential-gh
 chmod 500 ~/.local/bin/docker-credential-gh
-podman machine init --now
+# Podman DesktopのSettings > Resourcesからインスタンスを作成する
+# https://podman-desktop.io/docs/podman/gpu
 scp -P $(podman machine inspect | jq '.[0].SSHConfig.Port') -i ~/.local/share/containers/podman/machine/machine ~/.config/containers/registries.conf root@localhost:/etc/containers/registries.conf
 podman machine ssh --username root rm /etc/containers/registries.conf.d/000-shortnames.conf
 podman machine stop && podman machine start
+podman run --rm -it --device /dev/dri --name gpu-info quay.io/slopezpa/fedora-vgpu vulkaninfo | grep "GPU"
 ```
+
+### gpt-oss
