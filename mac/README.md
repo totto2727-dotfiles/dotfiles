@@ -191,3 +191,10 @@ podman machine ssh --username root rm /etc/containers/registries.conf.d/000-shor
 podman machine stop && podman machine start
 podman run --rm -it --device /dev/dri --name gpu-info quay.io/slopezpa/fedora-vgpu vulkaninfo | grep "GPU"
 ```
+
+### gpt-oss-120b
+
+- add podman ai lab extension
+- download optimized gpt-oss-120b
+  - <https://zenn.dev/tunerarticle/articles/63088ebbee17d8>
+  - <https://huggingface.co/bartowski/openai_gpt-oss-120b-GGUF>
