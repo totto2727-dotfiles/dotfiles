@@ -120,8 +120,18 @@ async function main() {
       ],
       // keyd
       [
+        rawURL("keyd", "common.conf"),
+        "/etc/keyd/common",
+        { sudo: true },
+      ],
+      [
         rawURL("keyd", "default.conf"),
         "/etc/keyd/default.conf",
+        { sudo: true },
+      ],
+      [
+        rawURL("keyd", "corebook.conf"),
+        "/etc/keyd/corebook.conf",
         { sudo: true },
       ],
     ] satisfies Parameters<typeof DownloadFile.download>[];
