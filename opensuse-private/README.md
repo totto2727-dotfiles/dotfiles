@@ -45,11 +45,12 @@ sudo zypper rm ibus
 
 1. open fcitx5 config
 1. configure input method
-  1. mozc
-  1. english
+   1. mozc
+   1. english
 1. configure global option
-
-![fcitx config](./fcitx.png)
+   ![fcitx config](./fcitx.png)
+4. open tweaks
+5. add startup application
 
 ### ime
 
