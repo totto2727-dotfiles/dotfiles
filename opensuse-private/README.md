@@ -36,26 +36,32 @@ gsettings set org.gnome.desktop.wm.preferences button-layout 'close,appmenu:'
 
 ## keyboard
 
+### input method
+
+```bash
+sudo zypper in fcitx5-mozc
+sudo zypper rm ibus
+```
+
+1. open fcitx5 config
+1. configure input method
+  1. mozc
+  1. english
+1. configure global option
+
+![fcitx config](./fcitx.png)
+
 ### ime
 
 1. open settings
 1. select keyboard
 1. add input source
-1. add english (us)
-1. add japanese (mozc:あ)
 1. remove english (intl)
 
 ### mozc
 
 1. open mozc
 1. select kotoeri
-
-### tweaks
-
-1. open tweaks
-1. select keyboard
-1. click additional layout option
-1. enable switching to another layout > capslock
 
 ### keyd
 
