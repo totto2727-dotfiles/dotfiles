@@ -136,6 +136,7 @@
   "cursor.composer.queueMessageDefaultBehavior": "queue",
   "cursor.composer.shouldAllowCustomModes": true,
   "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "cursor.cpp.enablePartialAccepts": true,
   "cursor.diffs.useCharacterLevelDiffs": true,
   "deno.enable": false,
   "deno.path": "",
@@ -248,8 +249,7 @@
     }
   ],
   "vim.useSystemClipboard": true,
-  "workbench.activityBar.location": "top",
-  "workbench.activityBar.orientation": "vertical",
+  "workbench.activityBar.orientation": "horizontal",
   "workbench.colorTheme": "Ayu Mirage Bordered",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.scrollToSwitchTabs": true,
