@@ -3,4 +3,4 @@ import $ from "jsr:@david/dax";
 
 await $`brew update`;
 await $`brew upgrade`;
-await $`mise update`;
+await $`mise upgrade`;
