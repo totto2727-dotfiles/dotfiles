@@ -131,7 +131,6 @@
     "sound": "off"
   },
   "biome.enabled": false,
-  "claude-code.selectedModel": "default",
   "cSpell.enabled": false,
   "css.lint.unknownAtRules": "ignore",
   "cursor.composer.queueMessageDefaultBehavior": "queue",
