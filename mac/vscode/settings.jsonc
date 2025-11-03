@@ -195,6 +195,9 @@
   "typescript.autoClosingTags": true,
   "typescript.preferences.jsxAttributeCompletionStyle": "none",
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "vim.easymotion": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
   "vim.insertModeKeyBindings": [
     {
       "after": [
@@ -206,6 +209,7 @@
       ]
     }
   ],
+  "vim.leader": "<space>",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "after": [
@@ -246,12 +250,49 @@
           "command": "editor.action.showHover"
         }
       ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "e"
+      ],
+      "commands": [
+        {
+          "command": "workbench.view.explorer"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "c",
+        "r"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.rename"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "c",
+        "a"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.quickFix"
+        }
+      ]
     }
   ],
+  "vim.useCtrlKeys": true,
   "vim.useSystemClipboard": true,
   "workbench.activityBar.orientation": "horizontal",
   "workbench.colorTheme": "Ayu Mirage Bordered",
   "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.enablePreview": false,
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.wrapTabs": true,
   "workbench.iconTheme": "vscode-icons",
