@@ -72,6 +72,8 @@ brew install git-delta
 curl -L https://github.com/totto2727-dotfiles/dotfiles/raw/refs/heads/main/mac/.gitconfig > ~/.gitconfig
 # 必要であれば
 curl -L https://github.com/totto2727-dotfiles/dotfiles/raw/refs/heads/main/mac/.gitconfig-work > ~/.gitconfig-work
+mkdir -p ~/.config/git
+curl -L https://github.com/totto2727-dotfiles/dotfiles/raw/refs/heads/main/mac/ignore > ~/.config/git/ignore
 ```
 
 - rewrite user name and user email
