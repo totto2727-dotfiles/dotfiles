@@ -20,18 +20,12 @@
     "sound": "off"
   },
   "accessibility.signals.chatRequestSent": {
-    "announcement": "auto",
     "sound": "off"
   },
   "accessibility.signals.chatResponseReceived": {
     "sound": "off"
   },
-  "accessibility.signals.chatUserActionRequired": {
-    "announcement": "auto",
-    "sound": "off"
-  },
   "accessibility.signals.clear": {
-    "announcement": "auto",
     "sound": "off"
   },
   "accessibility.signals.codeActionApplied": {
@@ -50,78 +44,57 @@
     "sound": "off"
   },
   "accessibility.signals.editsKept": {
-    "announcement": "auto",
     "sound": "off"
   },
   "accessibility.signals.editsUndone": {
-    "announcement": "auto",
     "sound": "off"
   },
   "accessibility.signals.lineHasBreakpoint": {
-    "announcement": "auto",
     "sound": "off"
   },
   "accessibility.signals.lineHasError": {
-    "announcement": "auto",
     "sound": "off"
   },
   "accessibility.signals.lineHasFoldedArea": {
-    "announcement": "auto",
     "sound": "off"
   },
   "accessibility.signals.lineHasInlineSuggestion": {
     "sound": "off"
   },
   "accessibility.signals.lineHasWarning": {
-    "announcement": "auto",
-    "sound": "off"
-  },
-  "accessibility.signals.nextEditSuggestion": {
-    "announcement": "auto",
     "sound": "off"
   },
   "accessibility.signals.noInlayHints": {
-    "announcement": "auto",
     "sound": "off"
   },
   "accessibility.signals.notebookCellCompleted": {
-    "announcement": "auto",
     "sound": "off"
   },
   "accessibility.signals.notebookCellFailed": {
-    "announcement": "auto",
     "sound": "off"
   },
   "accessibility.signals.onDebugBreak": {
-    "announcement": "auto",
     "sound": "off"
   },
   "accessibility.signals.positionHasError": {
-    "announcement": "auto",
     "sound": "off"
   },
   "accessibility.signals.positionHasWarning": {
-    "announcement": "auto",
     "sound": "off"
   },
   "accessibility.signals.progress": {
-    "announcement": "auto",
     "sound": "off"
   },
   "accessibility.signals.terminalBell": {
-    "announcement": "auto",
     "sound": "off"
   },
   "accessibility.signals.terminalCommandFailed": {
-    "announcement": "auto",
     "sound": "off"
   },
   "accessibility.signals.terminalCommandSucceeded": {
-    "announcement": "auto",
     "sound": "off"
   },
   "accessibility.signals.terminalQuickFix": {
-    "announcement": "auto",
     "sound": "off"
   },
   "accessibility.signals.voiceRecordingStarted": {
@@ -131,13 +104,12 @@
     "sound": "off"
   },
   "biome.enabled": false,
-  "cSpell.enabled": false,
+  "cSpell.enabled": true,
   "css.lint.unknownAtRules": "ignore",
   "cursor.composer.queueMessageDefaultBehavior": "queue",
   "cursor.composer.shouldAllowCustomModes": true,
   "cursor.composer.shouldChimeAfterChatFinishes": true,
   "cursor.cpp.enablePartialAccepts": true,
-  "cursor.diffs.useCharacterLevelDiffs": true,
   "deno.enable": false,
   "deno.path": "",
   "diffEditor.ignoreTrimWhitespace": false,
@@ -165,7 +137,8 @@
     "**/.turbo/**": true,
     "**/.wrangler/**": true,
     "**/storybook-static/**": true,
-    "**/test-results/**": true
+    "**/test-results/**": true,
+    "**/.DS_Store": true
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
@@ -186,6 +159,11 @@
   "scm.defaultViewMode": "tree",
   "scm.diffDecorationsGutterWidth": 5,
   "scm.inputFontFamily": "editor",
+  "tailwindCSS.classFunctions": [
+    "cva",
+    "cx",
+    "tv"
+  ],
   "tailwindCSS.emmetCompletions": true,
   "terminal.integrated.fontFamily": "PlemolJP Console NF",
   "terminal.integrated.fontSize": 16,
@@ -243,7 +221,7 @@
     },
     {
       "before": [
-        "K",
+        "K"
       ],
       "commands": [
         {
