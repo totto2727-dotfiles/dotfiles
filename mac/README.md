@@ -69,11 +69,11 @@ brew install font-plemol-jp font-plemol-jp-nf
 
 ```bash
 brew install git-delta
-curl -L https://github.com/totto2727-dotfiles/dotfiles/raw/refs/heads/main/mac/.gitconfig > ~/.gitconfig
+curl -L https://github.com/totto2727-dotfiles/dotfiles/raw/refs/heads/main/mac/git/.gitconfig > ~/.gitconfig
 # 必要であれば
-curl -L https://github.com/totto2727-dotfiles/dotfiles/raw/refs/heads/main/mac/.gitconfig-work > ~/.gitconfig-work
+curl -L https://github.com/totto2727-dotfiles/dotfiles/raw/refs/heads/main/mac/git/.gitconfig-work > ~/.gitconfig-work
 mkdir -p ~/.config/git
-curl -L https://github.com/totto2727-dotfiles/dotfiles/raw/refs/heads/main/mac/ignore > ~/.config/git/ignore
+curl -L https://github.com/totto2727-dotfiles/dotfiles/raw/refs/heads/main/mac/git/ignore > ~/.config/git/ignore
 ```
 
 - rewrite user name and user email
@@ -131,6 +131,28 @@ echo 'eval "$(mise activate zsh)"' >> "~/.zshrc"
 # npmバックエンドのため、aquaではなくasdfのnodeをインストールする
 mise use -g node@lts aqua:pnpm/pnpm@latest bun@latest deno@latest
 brew install ni
+```
+
+## setup cursor
+
+### install cursor
+
+```bash
+brew install cursor
+```
+
+### install vscode extensions
+
+```bash
+# mac/vscode
+jq -r '.[]' extentions.json | xargs -I {} cursor --install-extension {}
+```
+
+### update extension list
+
+```bash
+# mac/vscode
+cursor --list-extensions | jq -R -s 'split("\n") | map(select(length > 0))' > extensions.json
 ```
 
 ## setup claude code
