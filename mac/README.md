@@ -46,19 +46,6 @@
 defaults write -g ApplePressAndHoldEnabled -bool false
 ```
 
-## install brew
-
-## install hammerspoon
-
-```bash
-brew install hammerspoon
-gh repo clone totto2727-dotfiles/hammerspoon ~/.hammerspoon
-```
-
-1. open hammerspoon
-1. enable auto start
-1. reload config
-
 ## install font
 
 ```bash
