@@ -104,7 +104,11 @@
     "sound": "off"
   },
   "biome.enabled": false,
+  "claudeCode.initialPermissionMode": "plan",
   "cSpell.enabled": true,
+  "cSpell.userWords": [
+    "totto"
+  ],
   "css.lint.unknownAtRules": "ignore",
   "cursor.composer.queueMessageDefaultBehavior": "queue",
   "cursor.composer.shouldAllowCustomModes": true,
@@ -114,6 +118,7 @@
   "deno.path": "",
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.accessibilitySupport": "auto",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.dragAndDrop": false,
@@ -134,11 +139,11 @@
   "explorer.fileNesting.enabled": true,
   "files.autoSave": "onFocusChange",
   "files.exclude": {
+    "**/.DS_Store": true,
     "**/.turbo/**": true,
     "**/.wrangler/**": true,
     "**/storybook-static/**": true,
-    "**/test-results/**": true,
-    "**/.DS_Store": true
+    "**/test-results/**": true
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,

@@ -11,21 +11,30 @@
   },
   // ターミナル
   {
-    "key": "alt+t",
     "command": "terminal.focus",
+    "key": "alt+t",
     "when": "editorTextFocus"
   },
+  // Editor
   {
-    "key": "alt+t",
     "command": "workbench.action.focusActiveEditorGroup",
+    "key": "alt+t",
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+shift+m",
-    "command": "merge.goToPreviousUnhandledConflict"
+    "command": "merge.goToPreviousUnhandledConflict",
+    "key": "ctrl+shift+m"
   },
   {
-    "key": "ctrl+m",
-    "command": "merge.goToNextUnhandledConflict"
-  }
+    "command": "merge.goToNextUnhandledConflict",
+    "key": "ctrl+m"
+  },
+  {
+    "args": {
+      "text": "\\\r\n"
+    },
+    "command": "workbench.action.terminal.sendSequence",
+    "key": "shift+enter",
+    "when": "terminalFocus"
+  },
 ]
