@@ -49,29 +49,57 @@
 defaults write -g ApplePressAndHoldEnabled -bool false
 ```
 
+## rename computer name
+
+- rename totto2727
+- reboot
+
+## setup brew
+
+https://brew.sh/
+
+## setup nix
+
+https://docs.determinate.systems
+
+```bash
+curl -L https://raw.githubusercontent.com/totto2727-dotfiles/nix/refs/heads/main/flake.nix > flake.nix
+curl -L https://github.com/totto2727-dotfiles/nix/blob/main/flake.lock > flake.lock
+nix run nix-darwin -- switch --flake .
+```
+
 ## setup git
 
 ```bash
-# 必要であれば
+# 必要であればダウンロードして修正する
 curl -L https://github.com/totto2727-dotfiles/dotfiles/raw/refs/heads/main/mac/git/.gitconfig-work > ~/.gitconfig-work
-curl -L https://github.com/totto2727-dotfiles/dotfiles/raw/refs/heads/main/mac/git/ignore > ~/.config/git/ignore
 ```
 
-- rewrite user name and user email
-
 ## setup gh
-
-### login(https)
 
 ```bash
 gh auth login
 ```
 
-## setup dotfiles
+## setup chezmoi
 
 ```bash
-gh repo clone totto2727-dotfiles/dotfiles
+chezmoi init --apply https://github.com/totto2727-dotfiles/chezmoi.git
 ```
+
+## setup nix-repository
+
+```bash
+rm flake.nix flake.lock
+gh repo clone totto2727-dotfiles/nix
+cd nix
+task rebuild
+```
+
+## gpg
+
+- <https://christina04.hatenablog.com/entry/create-gpg-master-key-and-subkey>
+- <https://text.baldanders.info/remark/2019/10/openpgp-public-keys-in-github/>
 
 ## VSCode(Cursor, Antigravity)
 
@@ -107,8 +135,3 @@ podman run --rm -it --device /dev/dri --name gpu-info quay.io/slopezpa/fedora-vg
 - download optimized gpt-oss-120b
   - <https://zenn.dev/tunerarticle/articles/63088ebbee17d8>
   - <https://huggingface.co/bartowski/openai_gpt-oss-120b-GGUF>
-
-## gpg sign
-
-- <https://christina04.hatenablog.com/entry/create-gpg-master-key-and-subkey>
-- <https://text.baldanders.info/remark/2019/10/openpgp-public-keys-in-github/>
