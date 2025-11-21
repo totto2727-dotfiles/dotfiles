@@ -1,39 +1,11 @@
-[core]
-ignorecase = false
-pager = delta
-
-[init]
-defaultBranch = main
-
-[interactive]
-diffFilter = delta --color-only
-
-[merge]
-conflictstyle = zdiff3
-
-[pull]
-rebase = true
-
 [commit]
 gpgsign = true
 
 [tag]
 gpgsign = true
 
-[delta]
-navigate = true
-dark = true
-line-numbers = true
-side-by-side = true
-
 [user]
-name = totto2727
-email = kaihatu.totto2727@gmail.com
 signingkey = BA662CD23E2B4AD8
 
 [includeIf "gitdir:/Users/hayato.tsuchida/work/"]
 path = ~/.gitconfig-work
-
-[url "https://github.com/"]
-insteadOf = git@github.com:
-insteadOf = git://github.com/
