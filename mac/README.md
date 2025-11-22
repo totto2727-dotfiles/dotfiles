@@ -68,13 +68,6 @@ curl -L https://github.com/totto2727-dotfiles/nix/blob/main/flake.lock > flake.l
 nix run nix-darwin -- switch --flake .
 ```
 
-## setup git
-
-```bash
-# 必要であればダウンロードして修正する
-curl -L https://github.com/totto2727-dotfiles/dotfiles/raw/refs/heads/main/mac/git/.gitconfig-work > ~/.gitconfig-work
-```
-
 ## setup gh
 
 ```bash
