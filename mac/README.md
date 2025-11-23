@@ -34,7 +34,6 @@
 - capslock -> ctrl
 - global -> capslock
 - crtl -> global
-- disable global key(as fn)
 
 #### keyboard shortcut
 
