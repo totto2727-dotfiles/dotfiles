@@ -1,0 +1,14 @@
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - task --list-all
+  lima:init:
+    cmds:
+      - limactl start --vm-type=krunkit --name=podman template://podman
+      - limactl shell podman mkdir -p /home/totto2727.linux/.config/containers
+      - limactl copy ./podman/registries.conf podman:/home/totto2727.linux/.config/containers/registries.conf
+  lima:start:
+    cmds:
+      - limactl start podman --vm-type=krunkit

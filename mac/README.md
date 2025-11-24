@@ -4,7 +4,13 @@
 
 ### accessibility > point controll > trackpad
 
-- up scroll speed
+- max scroll speed
+- enable drag by trackpad
+
+### accessibility > point controll > mause
+
+- max wheel speed
+- max scroll speed
 - enable drag by trackpad
 
 ### control center
@@ -88,6 +94,16 @@ cd nix
 task rebuild
 ```
 
+## setup base app
+
+- open 1password
+- open Edge
+  - enable Kagi extension
+  - change search engine to Kagi
+  - change home button to Kagi
+- open and login logi-options+
+  - restore backup
+
 ## gpg
 
 - <https://christina04.hatenablog.com/entry/create-gpg-master-key-and-subkey>
@@ -110,16 +126,6 @@ cursor --list-extensions | jq -R -s 'split("\n") | map(select(length > 0))' > ex
 ```
 
 ## Podman
-
-### script
-
-```bash
-# Podman DesktopのSettings > Resourcesからインスタンスを作成する
-scp -P $(podman machine inspect | jq '.[0].SSHConfig.Port') -i ~/.local/share/containers/podman/machine/machine ~/.config/containers/registries.conf root@localhost:/etc/containers/registries.conf
-podman machine ssh --username root rm /etc/containers/registries.conf.d/000-shortnames.conf
-podman machine stop && podman machine start
-podman run --rm -it --device /dev/dri --name gpu-info quay.io/slopezpa/fedora-vgpu vulkaninfo | grep "GPU"
-```
 
 ### gpt-oss-120b
 
