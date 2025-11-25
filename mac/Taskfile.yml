@@ -12,3 +12,9 @@ tasks:
   lima:start:
     cmds:
       - limactl start podman --vm-type=krunkit
+  agy:install:
+    cmds:
+      - jq -r '.[]' vscode/extensions.json | xargs -I {} agy --install-extension {}
+  agy:update:
+    cmds:
+      - agy --list-extensions | jq -R -s 'split("\n") | map(select(length > 0))' > ./vscode/extensions.json
