@@ -105,6 +105,7 @@
   },
   "biome.enabled": false,
   "claudeCode.initialPermissionMode": "plan",
+  "claudeCode.selectedModel": "opus",
   "cSpell.enabled": true,
   "cSpell.userWords": [
     "totto"
@@ -118,7 +119,7 @@
   "deno.path": "",
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.accessibilitySupport": "auto",
+  "editor.accessibilitySupport": "on",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.dragAndDrop": false,
@@ -164,6 +165,7 @@
   "scm.defaultViewMode": "tree",
   "scm.diffDecorationsGutterWidth": 5,
   "scm.inputFontFamily": "editor",
+  "security.workspace.trust.enabled": true,
   "tailwindCSS.classFunctions": [
     "cva",
     "cx",
