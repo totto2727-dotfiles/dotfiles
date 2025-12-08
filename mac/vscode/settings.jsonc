@@ -104,30 +104,16 @@
     "sound": "off"
   },
   "biome.enabled": false,
-  "claudeCode.initialPermissionMode": "plan",
-  "claudeCode.selectedModel": "opus",
   "cSpell.enabled": true,
   "cSpell.userWords": [
-    "chezmoi",
-    "ghostty",
-    "GPUSHF",
-    "GSWC",
-    "krunkit",
-    "lazydocker",
-    "nixfmt",
-    "nixos",
-    "nvim",
-    "pinentry",
-    "plemol",
-    "totto",
-    "yazi"
+    "totto"
   ],
   "css.lint.unknownAtRules": "ignore",
   "deno.enable": false,
   "deno.path": "",
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.accessibilitySupport": "on",
+  "editor.accessibilitySupport": "auto",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.dragAndDrop": false,
@@ -146,13 +132,31 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "Dockerfile": "Containerfile*, Dockerfile*, *.Containerfile, *.Dockerfile, compose.*, docker-compose.*, .containerignore, .dockerignore",
+    "package.json": "turbo.json, drizzle.config.*, tsdown.config.*, tsr.config.*, ui.*, wrangler.*, .dev.vars, worker-configuration.*, biome.*, dprint.*, eslint.config.*, .eslintrc*, prettier.config.*, .prettierrc*, vite.config.*, vitest.config.*, tsconfig.*, tailwind.*, pnpm-lock.yaml, package-lock.json, bun.lockb, yarn.lock, .npmrc, pncat.*, pnpm-workspace.*, tamagui.config.*, tamagui.theme.*, vercel.*, react-router.*",
+    "Pulumi.yaml": "Pulumi.*",
+    "README.md": ".gitignore, .editorconfig, LICENSE, renovate.*, *.code-workspace,  AGENTS.md, CLAUDE.md, GEMINI.md, .mcp.*, .env*, mise.*, devbox.*, Taskfile.*, lefthook.*"
+  },
   "files.autoSave": "onFocusChange",
   "files.exclude": {
+    "**/.devbox/": true,
+    // file
     "**/.DS_Store": true,
-    "**/.turbo/**": true,
-    "**/.wrangler/**": true,
-    "**/storybook-static/**": true,
-    "**/test-results/**": true
+    "**/.react-router/": true,
+    "**/.serena/": true,
+    "**/.tamagui/": true,
+    "**/.tanstack/": true,
+    "**/.turbo/": true,
+    "**/.vercel/": true,
+    "**/.wrangler/": true,
+    "**/build/": true,
+    // generic
+    "**/dist/": true,
+    // JS
+    "**/node_modules/": true,
+    "**/storybook-static/": true,
+    "**/test-results/": true
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
@@ -180,6 +184,7 @@
     "tv"
   ],
   "tailwindCSS.emmetCompletions": true,
+  "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.fontFamily": "PlemolJP Console NF",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.macOptionIsMeta": true,
