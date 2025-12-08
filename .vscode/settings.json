@@ -7,5 +7,20 @@
   },
   "deno.enable": true,
   "deno.lint": true,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "cSpell.words": [
+    "Anson",
+    "autofetch",
+    "Containerfile",
+    "containerignore",
+    "devbox",
+    "easymotion",
+    "hlsearch",
+    "incsearch",
+    "Plemol",
+    "pncat",
+    "Pulumi",
+    "tamagui",
+    "Taskfile"
+  ]
 }
