@@ -110,6 +110,7 @@ curl -L https://github.com/totto2727-dotfiles/bash/raw/refs/heads/main/starship.
 ```bash
 brew install mise
 echo 'eval "$(mise activate zsh)"' >> "~/.zshrc"
+mise settings experimental=true
 ```
 
 ## setup javascript
@@ -220,3 +221,19 @@ podman run --rm -it --device /dev/dri --name gpu-info quay.io/slopezpa/fedora-vg
 - download optimized gpt-oss-120b
   - <https://zenn.dev/tunerarticle/articles/63088ebbee17d8>
   - <https://huggingface.co/bartowski/openai_gpt-oss-120b-GGUF>
+
+## zsh
+
+- `brew install zsh-completions`
+- add .zshrc
+
+```bash
+  if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+    autoload -Uz compinit
+    compinit
+  fi
+```
+
+- `rm -f ~/.zcompdump; compinit`
