@@ -35,12 +35,6 @@
 
 - repeat speep max
 
-#### macbook keyboard shortcut
-
-- capslock -> ctrl
-- global -> capslock
-- crtl -> global
-
 #### keyboard shortcut
 
 - remove ctrl + space shortcut
@@ -108,6 +102,20 @@ task rebuild
 
 - <https://christina04.hatenablog.com/entry/create-gpg-master-key-and-subkey>
 - <https://text.baldanders.info/remark/2019/10/openpgp-public-keys-in-github/>
+
+## setup karabiner driver and kanata
+
+https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/blob/main/dist/Karabiner-DriverKit-VirtualHIDDevice-6.9.0.pkg
+
+```bash
+/Applications/.Karabiner-VirtualHIDDevice-Manager.app/Contents/MacOS/Karabiner-VirtualHIDDevice-Manager activate
+```
+
+```bash
+karabiner
+# split terminal
+kanata
+```
 
 ## VSCode(Cursor, Antigravity)
 
