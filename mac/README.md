@@ -133,11 +133,3 @@ jq -r '.[]' extentions.json | xargs -I {} cursor --install-extension {}
 cursor --list-extensions | jq -R -s 'split("\n") | map(select(length > 0))' > extensions.json
 ```
 
-## Podman
-
-### gpt-oss-120b
-
-- add podman ai lab extension
-- download optimized gpt-oss-120b
-  - <https://zenn.dev/tunerarticle/articles/63088ebbee17d8>
-  - <https://huggingface.co/bartowski/openai_gpt-oss-120b-GGUF>
